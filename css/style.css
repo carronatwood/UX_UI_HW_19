@@ -1,0 +1,185 @@
+html {
+    scroll-behavior: smooth;
+  }
+.logo {
+    width: 23%;
+    padding: 5px;
+    text-align: left;
+}
+.nav {
+    width: 73%;
+    padding: 0%;
+}
+.navList li{
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: center;
+    flex-direction: right;
+    display: inline; 
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans";
+}
+.heroImg {
+    height: 100x;
+    width: auto;
+    padding: 10px;
+    position: relative;
+}
+.container{
+    text-align: center;
+}
+.content{
+    width: 500px;
+    margin: 0 auto;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    min-height: 19px;
+    width: 150px;
+    margin: 5px ;
+    color: #fff;
+    background-color: rgb(59, 78, 64);
+    border: 0px;
+}
+.footer{
+    background-color: #373738;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+#footerList li{
+    margin: 0px auto;
+    list-style-type: none;
+    text-align: center;
+    flex-direction: center;
+    display: inline;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans";
+}
+.flexChild {
+    margin: 0px;
+    text-align: center;
+    grid-template-rows: 33%;
+    grid-template-areas: 1fr 1fr 1fr;
+}
+.flexChild p {
+    margin: 0px;
+    max-width: 300px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-areas: 1fr 1fr 1fr;
+}
+h1{
+    font-family: "Open Sans";
+    text-align: center;
+    margin: 0;
+}
+p{
+    font-family: "Open Sans";
+}
+h4{
+    font-family: "Open Sans";
+}
+h3{
+    font-family: "Open Sans";
+    text-align: center;
+}
+.workGrid {
+    display: grid;
+    margin: 0 auto;
+}
+.gridChild {
+    margin: 0px;
+    text-align: center;
+    display: inline-block;
+    flex-direction: row;
+    grid-template-rows: 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "hairGoals NEMAA"
+}
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutMe {
+    background-color: #ACB9AC;
+    color: white;
+    margin: 0 auto;
+}
+.mySkills {
+    background-color: #46391F;
+    color: white;
+    margin: 0 auto;
+}
+.myWork{
+    background-color: #B7B3AB;
+    color: white;
+    margin: 0 auto;
+}
+.gridChild p{
+    margin: 0px;
+    max-width: 300px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-areas: 1fr 1fr;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.gridChild button{
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    min-height: 19px;
+    width: 150px;
+    margin: 5px ;
+    color: #fff;
+    background-color: rgb(59, 78, 64);
+    border: 0px;
+
+}
+
+@media only screen and (max-width: 768px){  
+    .flexContainer{
+        display:grid;
+    }
+    .flexChild{
+    margin: 10px;
+    text-align: center;
+    flex-direction: row;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "User Research" 
+    "UX/UI Prototyping"
+    "Front End Web Development";
+}
+.workGrid {
+    display: grid;
+}   
+    .gridChild {
+    margin: 10px;
+    text-align: center;
+    flex-direction: row;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "hairGoals" 
+    "NEMAA";
+}
+}

@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Hotjar Tracking Code for My site -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2071650,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carron Atwood</title>
     <link a href="css/style.css" type="text/css" rel="stylesheet">    
 </head>
 <body>
-    <header class="navigation flexContainer">
+    <header class="navigationTop flexContainer sticky">
     <div class="inline-block logo">
-        <img src="images/LOGO.png" height="50px">
+        <img src="images/LOGO.png" height="75px">
     </div>
     <div>
         <nav class="inline-block">
+            <span class="nav">
             <ul class="navList">
-                <li>About</li>
-                <li>Skills</li>
-                <li>Work</li>
-                <li>Contact</li>
+                <li><a href="#content">About</a></li>
+                <li><a href="#mySkills">Skills</a></li>
+                <li><a href="#myWork">Work</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
+        </span>
         </nav>
     </div>
     </header>
@@ -27,6 +40,7 @@
     <div class="content">
         <div class="container">
             <br></br>
+            <a name="content"></a>
             <h1>Hey There!</h1>
         <p>My name is Carron Atwood. I am a User Experience Designer who specializes in ethnographic user research, empathetic human-centered design and front end web development. I focus on human needs to come up with creative solutions to design problems. I strive to make the web more beautiful, accessible, and inspiring to all.</p>
         <img src="images/me.jpeg" height="250px">
@@ -40,6 +54,7 @@
     <!-- My UX Skills section coded using CSS flex -->
     <section class="mySkills">
         <br></br>
+        <a name="mySkills"></a>
         <h1>My Skills</h1>
         <br></br>
         <div class="flexContainer" max-width="100px">
@@ -65,6 +80,7 @@
     <!-- My Work Section Constructed using CSS Grid -->
     <section class="myWork">
         <br></br>
+        <a name="myWork"></a>
         <h1>My Work</h1>
         <br></br>
         <div class="workGrid flexContainer">
@@ -99,7 +115,7 @@
         <br></br>
     </section>
     <footer>
-        <ul id="footerList" class="navigation flexContainer">
+        <ul id="footerList" class="navigationBottom flexContainer">
             <li>About</li>
             <li>Skills</li>
             <li>Work</li>
@@ -107,6 +123,7 @@
         </ul>
     </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/index.js"></script>
 </html>
 

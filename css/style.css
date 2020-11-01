@@ -6,9 +6,14 @@ html {
     padding: 5px;
     text-align: left;
 }
+.navigationTop{
+    background-color: whitesmoke;
+    z-index: 9999;
+    margin-bottom: 10px;
+}
 .nav {
     width: 73%;
-    padding: 0%;
+    margin-bottom: 15px;
 }
 .navList li{
     margin: 0 auto;
@@ -21,6 +26,21 @@ html {
     align-items: center;
     font-family: "Open Sans";
 }
+a { 
+    color: inherit; 
+    text-decoration: none;
+} 
+.nav a:hover {
+    text-decoration: underline;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+.sticky + .content {
+    padding-top: 60px;
+  }
 .heroImg {
     height: 100x;
     width: auto;
@@ -33,6 +53,7 @@ html {
 .content{
     width: 500px;
     margin: 0 auto;
+    margin-top: 50px;
 }
 .button{
     display: flex;
@@ -116,6 +137,7 @@ h3{
     background-color: #ACB9AC;
     color: white;
     margin: 0 auto;
+    margin-top: 50px;
 }
 .mySkills {
     background-color: #46391F;

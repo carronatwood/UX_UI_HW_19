@@ -4,7 +4,6 @@ html {
 .logo {
     width: 23%;
     padding: 5px;
-    text-align: left;
 }
 .navigationTop{
     background-color: whitesmoke;
@@ -66,6 +65,7 @@ a {
     color: #fff;
     background-color: rgb(59, 78, 64);
     border: 0px;
+    margin: 40px;
 }
 .footer{
     background-color: #373738;
@@ -139,15 +139,24 @@ h3{
     margin: 0 auto;
     margin-top: 50px;
 }
+.aboutMe h1{
+    padding-top: 90px;
+}
 .mySkills {
     background-color: #46391F;
     color: white;
     margin: 0 auto;
 }
+.mySkills h1 {
+    padding-top: 90px;
+}
 .myWork{
     background-color: #B7B3AB;
     color: white;
     margin: 0 auto;
+}
+.myWork h1{
+    padding-top: 90px;
 }
 .gridChild p{
     margin: 0px;
@@ -176,9 +185,13 @@ h3{
 
 }
 
-@media only screen and (max-width: 768px){  
+@media only screen and (max-width: 1000px){  
     .flexContainer{
         display:grid;
+    }
+    .navigationBottom{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .flexChild{
     margin: 10px;
